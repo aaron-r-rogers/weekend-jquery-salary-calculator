@@ -10,7 +10,7 @@ BASE MODE
 [X] Submit button that collects input fields
     [X] Compiles data as object
     [ ] Caclulates monthly costs
-    [ ] Appends info to DOM as table
+    [X] Appends info to DOM as table
     [ ] Clears input fields
 [ ] If cost > $20,000
     [ ] Add red background color @total monthly cost

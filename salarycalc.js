@@ -36,7 +36,15 @@ function onAddEmployee(event) {
     //to prevent duplicate rows in DOM
 
     for (let employee of allEmployees) {
-
+        $('#tableBody').append(`
+            <tr>
+                <td>${employee.firstName}</td>
+                <td>${employee.lastName}</td>
+                <td>${employee.iD}</td>
+                <td>${employee.title}</td>
+                <td>$${employee.annualSalary}</td>
+            </tr>
+        `)
     }
 }
 
