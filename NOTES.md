@@ -9,7 +9,7 @@ BASE MODE
     [X] Annual Salary
 [X] Submit button that collects input fields
     [X] Compiles data as object
-    [ ] Caclulates monthly costs
+    [X] Caclulates monthly costs
     [X] Appends info to DOM as table
     [ ] Clears input fields
 [ ] If cost > $20,000

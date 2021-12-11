@@ -45,7 +45,7 @@ function onAddEmployee(event) {
                 <td>$${employee.annualSalary}</td>
             </tr>
         `)
-    }
+    }//Appends inputs from form into DOM table
 
     let sumOfSalaries = allEmployees.reduce((total, employee) => {
         return total + employee.annualSalary;
@@ -53,8 +53,11 @@ function onAddEmployee(event) {
     let monthlySalaries = sumOfSalaries/12
     let roundedMonthly = Math.round((monthlySalaries + Number.EPSILON) * 100) / 100;
     $('#monthlyOutput').empty().append(`$${roundedMonthly}`);
-    //Adds all employee salaries and appends them to DOM
+    //Adds all employee salaries, converts to monthly, rounds, and appends them to DOM
 
+    if (roundedMonthly > 20000) {
+        $('#totalMonthly').css('background-color', 'red');        
+    }
 }
 
 
