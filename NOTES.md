@@ -1,16 +1,16 @@
 
 BASE MODE
 
-[ ] Input form for employees
-    [ ] First name
-    [ ] Last name
-    [ ] ID#
-    [ ] Job title
-    [ ] Annual Salary
+[X] Input form for employees
+    [X] First name
+    [X] Last name
+    [X] ID#
+    [X] Job title
+    [X] Annual Salary
 [ ] Submit button that collects input fields
     [ ] Compiles data
     [ ] Caclulates monthly costs
-    [ ] Appends info to DOM
+    [ ] Appends info to DOM as table
     [ ] Clears input fields
 [ ] If cost > $20,000
     [ ] Add red background color @total monthly cost
@@ -18,7 +18,7 @@ BASE MODE
 
 STRETCH MODE
 
-[ ] Make it beautiful
+[ ] Beautification
 [ ] Upon deleted employee
     [ ] Update total monthly cost
     - Use .text() OR .data() as getter
