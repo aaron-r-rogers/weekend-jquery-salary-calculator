@@ -7,6 +7,7 @@ function readyNow() {
 
 function onAddEmployee(event) {
     event.preventDefault();
+    console.log('employee added')
 
     let firstName = $('#firstName').val();
     let lastName = $('#lastName').val();
@@ -21,5 +22,5 @@ function onAddEmployee(event) {
         title: title,
         annualSalary: annualSalary
     };
-    console.log(`New employee: ${newEmployee}`);
+    console.log('New employee', newEmployee);
 }

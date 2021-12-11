@@ -7,8 +7,8 @@ BASE MODE
     [X] ID#
     [X] Job title
     [X] Annual Salary
-[ ] Submit button that collects input fields
-    [ ] Compiles data
+[X] Submit button that collects input fields
+    [X] Compiles data as object
     [ ] Caclulates monthly costs
     [ ] Appends info to DOM as table
     [ ] Clears input fields
@@ -23,3 +23,8 @@ STRETCH MODE
     [ ] Update total monthly cost
     - Use .text() OR .data() as getter
 [ ] Any value added funcitonality???
+
+BACKLOG
+
+- Why can't I use a template literal with an object?
+- 404 error html not found without event.preventDefault()
