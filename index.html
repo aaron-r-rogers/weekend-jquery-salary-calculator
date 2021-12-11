@@ -25,6 +25,7 @@
             class="form-control"
             type="text"
             placeholder="First Name"
+            required
         />
 
         <input
@@ -32,6 +33,7 @@
             class="form-control"
             type="text"
             placeholder="Last Name"
+            required
         />
 
         <input
@@ -39,6 +41,7 @@
             class="form-control"
             type="number"
             placeholder="ID"
+            required
         />
 
         <input
@@ -46,6 +49,7 @@
             class="form-control"
             type="text"
             placeholder="Title"
+            required
         />
 
         <input
@@ -53,13 +57,20 @@
             class="form-control"
             type="number"
             placeholder="Annual Salary"
+            required
         />
 
-        <input
-            class="form-control"
+        <button
             type="submit"
-            value="Submit"
-        />
+            class="form-control">
+            Submit
+        </button>
+
+        <button
+            type="reset"
+            class="form-control">
+            Reset
+        </button>
 
     </form>
 
@@ -93,7 +104,7 @@
     </table>
 
     <section>
-        <p>Total Monthly: </p>
+        <p id="totalMonthly">Total Monthly: <span id="monthlyOutput"></span></p>
     </section>
 
 </body>
