@@ -22,6 +22,7 @@ STRETCH MODE
 [ ] Upon deleted employee
     [ ] Update total monthly cost
     - Use .text() OR .data() as getter
+[ ] Alerts for empty fields
 [ ] Any value added funcitonality???
 
 BACKLOG
