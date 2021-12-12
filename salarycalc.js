@@ -10,27 +10,21 @@ function readyNow() {
     //event listener for deleting employee
 }
 
-function onDeleteEmployee() {
-    let removal = $(this).closest('tr').find('.idNum').text();
-    index = allEmployees.findIndex(function (item) {
-    return item.id === removal;
-    });//grabs tr at button click and assigns as variable; returns corresponding index
-
-    allEmployees.splice(index, 1);
-    //grabs specified element
-
-    $(this).closest('tr').remove();
-    //removes the row
+function onDeleteEmployee(event) {
+    console.log(event);
+    let removed = Number($(this)
+                    .parents('tr')
+                    .find(".idNum")
+                    .text());
+    //removed is variable that is the unique employer ID number
+    let index = allEmployees.findIndex(function(employee) {
+        return employee.iD === removed;
+    })//matches removed variable to first found matching ID in array
+    allEmployees.splice(index, 1)
+    //removes one employee at specified index
 
     appendTable(allEmployees);
-    calcSalaries(allEmployees);
 }
-
-// function onDeleteEmployee() {
-//     console.log('Deleting employee');
-//     $(this).parent().remove();
-//     $(this).closest('tr').remove();
-// } 
 
 function onAddEmployee(event) {
     event.preventDefault();//stops page refresh
