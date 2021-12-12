@@ -1,9 +1,21 @@
-# Project Name
-
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+# SALARY CALCULATOR
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
+_Duration: 2 Day Build_
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+This salary calculator allows a user to add an employee to a table which tracks the combined monthly salary expense.  Employees can be added and removed freely, and when over budget, which is arbitrarily set to $20,000/month, a red banner appears.
+
+## Built With
+
+HTML
+CSS
+JavaScript
+jQuery
+Bootstrap
+
+## Acknowledgement
+Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality. Especially Edan and the Woodall cohort.
+
+## Support
+If you have suggestions or issues, please email me at [rogers.aaron.r@gmail.com](www.google.com)

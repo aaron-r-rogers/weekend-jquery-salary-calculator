@@ -18,7 +18,8 @@ BASE MODE
 
 STRETCH MODE
 
-[ ] Beautification
+[X] Beautification
+    - good enough but could definitely be better
 [ ] Dollar sign in annual salary field
 [X] Upon deleted employee
     [X] Update total monthly cost
