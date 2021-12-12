@@ -6,17 +6,31 @@ function readyNow() {
     console.log(`Ready now.`);
     $('#form').submit(onAddEmployee);
     //event listener for form submission
-    //$(document).on('click', '.delBtn', onDeleteEmployee);
+    $(document).on('click', '.delBtn', onDeleteEmployee);
     //event listener for deleting employee
+}
+
+function onDeleteEmployee() {
+    let removal = $(this).closest('tr').find('.idNum').text();
+    index = allEmployees.findIndex(function (item) {
+    return item.id === removal;
+    });//grabs tr at button click and assigns as variable; returns corresponding index
+
+    allEmployees.splice(index, 1);
+    //grabs specified element
+
+    $(this).closest('tr').remove();
+    //removes the row
+
+    appendTable(allEmployees);
+    calcSalaries(allEmployees);
 }
 
 // function onDeleteEmployee() {
 //     console.log('Deleting employee');
-//     for (let employee of allEmployees)
-//         if ($(this).parent().parent().hasClass(`${employee}`)){
-//             allEmployees.splice()
-//         }
-// }
+//     $(this).parent().remove();
+//     $(this).closest('tr').remove();
+// } 
 
 function onAddEmployee(event) {
     event.preventDefault();//stops page refresh
@@ -56,7 +70,7 @@ function appendTable (allEmployees) {
             <tr>
                 <td>${employee.firstName}</td>
                 <td>${employee.lastName}</td>
-                <td>${employee.iD}</td>
+                <td class="idNum">${employee.iD}</td>
                 <td>${employee.title}</td>
                 <td>$${employee.annualSalary}</td>
                 <td>
@@ -81,9 +95,12 @@ function calcSalaries (allEmployees) {
     //Adds all employee salaries, converts to monthly, rounds, and appends them to DOM
 
     if (roundedMonthly > 20000) {
-        $('#totalMonthly').css('background-color', 'red');        
-    }//If monthly cost exceeds $20,000, background turns red
-}
+        $('#totalMonthly').css('background-color', 'red');
+        }  
+        else {
+            $('#totalMonthly').css('background-color', 'white');
+        }        
+    }//If monthly cost exceeds $20,000, background is red
 
 function clearInputs() {
     $('#firstName').val('');
