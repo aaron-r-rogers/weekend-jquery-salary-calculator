@@ -1,6 +1,6 @@
 $(document).ready(readyNow);
 
-let allEmployees = [];//Global array to grab employees
+let allEmployees = [];//global array to grab employees
 
 function readyNow() {
     console.log(`Ready now.`);
@@ -34,7 +34,7 @@ function onAddEmployee(event) {
     let iD = Number($('#iD').val());
     let title = $('#title').val();
     let annualSalary = Number($('#annualSalary').val());
-    //Variables created for values of input fields
+    //variables created for values of input fields
 
     let newEmployee = {
         firstName: firstName,
@@ -44,12 +44,21 @@ function onAddEmployee(event) {
         annualSalary: annualSalary
     };
     console.log('New employee', newEmployee);
-    //Values of input fields --> object per employee
+    //values of input fields --> object per employee
 
-    allEmployees.push(newEmployee);
-    console.log(allEmployees);
-    //Newly created employee object added to global array allEmployees
-
+    if (!newEmployee.firstName ||
+        !newEmployee.lastName ||
+        !newEmployee.iD ||
+        !newEmployee.title ||
+        !newEmployee.annualSalary ) {
+            return alert('All inputs must be complete to submit new employee.')
+            //alerts user to complete any empty fields
+        } else {
+            allEmployees.push(newEmployee);
+            //newly created employee object added to global array allEmployees
+            console.log(allEmployees);
+        }
+    
     appendTable(allEmployees);
 }
 

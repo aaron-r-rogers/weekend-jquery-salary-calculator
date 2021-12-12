@@ -14,16 +14,16 @@ BASE MODE
     [ ] Clears input fields
 [X] If cost > $20,000
     [X] Add red background color @total monthly cost
-[ ] Delete button to remove employee from DOM
+[X] Delete button to remove employee from DOM
 
 STRETCH MODE
 
 [ ] Beautification
 [ ] Dollar sign in annual salary field
-[ ] Upon deleted employee
-    [ ] Update total monthly cost
+[X] Upon deleted employee
+    [X] Update total monthly cost
     - Use .text() OR .data() as getter
-[ ] Alerts for empty fields
+[X] Alerts for empty fields
 [ ] Any value added funcitonality???
 
 BACKLOG
