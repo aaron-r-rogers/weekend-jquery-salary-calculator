@@ -14,62 +14,64 @@
 <body>
 
     <header>
-        <h1>Calculator</h1>
+        <h1>Salary Calculator</h1>
     </header>
 
-    <form id="form" class="formGroup">
-        <h2>Add Employee</h2>
+    <form id="form" class="formGroup container">
+        <h2 id="inputHead">Add Employee</h2>
 
         <input
             id="firstName"
-            class="form-control"
+            class="form-control input"
             type="text"
             placeholder="First Name"
         />
 
         <input
             id="lastName"
-            class="form-control"
+            class="form-control input"
             type="text"
             placeholder="Last Name"
         />
 
         <input
             id="iD"
-            class="form-control"
+            class="form-control input"
             type="number"
             placeholder="ID"
         />
 
         <input
             id="title"
-            class="form-control"
+            class="form-control input"
             type="text"
             placeholder="Title"
         />
 
         <input
             id="annualSalary"
-            class="form-control"
+            class="form-control input"
             type="number"
             placeholder="Annual Salary"
         />
 
         <button
             type="submit"
-            class="form-control">
+            class="form-control button">
             Submit
         </button>
 
         <button
             type="reset"
-            class="form-control">
+            class="form-control button">
             Reset
         </button>
 
     </form>
 
-    <table class="table">
+    <table class="table table-striped table-bordered container">
+
+        <caption>Employee Salary Data</caption>
 
         <thead>
             <tr>
@@ -82,17 +84,9 @@
             </tr>
         </thead>
 
-        <tbody id="tableBody">
-            <tr>
-                <td>This</td>
-                <td>Is</td>
-                <td>1</td>
-                <td>Example</td>
-                <td>$2</td>
-            </tr>
-        </tbody>
+        <tbody id="tableBody"></tbody>
 
-        <tfoot>
+        <tfoot id="tfoot">
             <tr></tr>
         </tfoot>
 

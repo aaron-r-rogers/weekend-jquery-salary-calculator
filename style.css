@@ -1,0 +1,64 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    background-color: #5B5B5B;
+    color: white;
+    padding: 50px 0px 30px 0px;
+    margin-bottom: 40px;
+}
+
+#form {
+    margin: 20px 100px 20px 100px;
+}
+
+.formControlInput {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}  
+
+.button {
+    width: 200px;
+    background-color: lightgray;
+    border: 2px solid darkgray;
+    margin-top: 8px;
+}
+
+.input {
+    display: inline-flex;
+    width: 200px
+}
+
+.table {
+    margin: 60px 60px 10px 100px;
+    display: inline-table;
+    min-width: 400px;
+    border-radius: 5px;
+}
+
+table, th, td, tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: lightgray;
+}
+
+#tfoot {
+    border: 1px solid black;
+    height: 30px;
+}
+
+#totalMonthly {
+    text-align: right;
+    margin: 10px 60px 0px 0px;
+    font-weight: 500;
+    font-size: 20px;
+}
+

@@ -24,7 +24,7 @@ STRETCH MODE
     [X] Update total monthly cost
     - Use .text() OR .data() as getter
 [X] Alerts for empty fields
-[ ] Any value added funcitonality???
+[X] Any value added funcitonality???
 
 BACKLOG
 

@@ -59,7 +59,8 @@ function onAddEmployee(event) {
             console.log(allEmployees);
         }
     
-    appendTable(allEmployees);
+    appendTable(allEmployees);//sends modified array to append function
+    console.log(allEmployees);
 }
 
 function appendTable (allEmployees) {
@@ -102,8 +103,8 @@ function calcSalaries (allEmployees) {
         }  
         else {
             $('#totalMonthly').css('background-color', 'white');
-        }        
-    }//If monthly cost exceeds $20,000, background is red
+    }        
+}//If monthly cost exceeds $20,000, background is red
 
 function clearInputs() {
     $('#firstName').val('');
