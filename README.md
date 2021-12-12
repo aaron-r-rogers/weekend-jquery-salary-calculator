@@ -18,4 +18,4 @@ Bootstrap
 Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality. Especially Edan and the Woodall cohort.
 
 ## Support
-If you have suggestions or issues, please email me at [rogers.aaron.r@gmail.com](www.google.com)
+If you have suggestions or issues, please email me at [rogers.aaron.r@gmail.com].
